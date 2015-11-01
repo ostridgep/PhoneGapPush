@@ -63,7 +63,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Third party plugins -->
-    <gap:plugin name="phonegap-plugin-push"  />
+    <gap:plugin name="com.phonegap.phonegap-plugin-push"  />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
