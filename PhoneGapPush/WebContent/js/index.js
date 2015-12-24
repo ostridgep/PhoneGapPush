@@ -44,6 +44,8 @@ var app = {
         push.on('registration', function(data) {
             console.log("registration event");
             document.getElementById("regId").innerHTML = data.registrationId;
+            registerPushID(data.registrationId)
+           
             console.log(JSON.stringify(data));
         });
 
@@ -73,5 +75,14 @@ var app = {
         });
     }
 };
+function registerPushID(id){
 
+	 x='http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID'+id
+		
+		$.ajax({ url: x, });
+	    
+
+	 
+	  
+	}
 app.initialize();
