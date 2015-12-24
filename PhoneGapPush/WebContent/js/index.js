@@ -80,7 +80,7 @@ function registerPushID(id){
 	
 	
 	 x='http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID='+id
-	
+	alert(x)
 		$.ajax({ url: x, });
 	    
 
