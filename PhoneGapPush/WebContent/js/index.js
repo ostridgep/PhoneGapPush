@@ -77,8 +77,8 @@ var app = {
 };
 function registerPushID(id){
 
-	 x='http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID'+id
-	alert(x)	
+	 x='http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID='+id
+	
 		$.ajax({ url: x, });
 	    
 
