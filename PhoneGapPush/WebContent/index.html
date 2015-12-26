@@ -147,10 +147,10 @@ NOTE:
             
             function tokenHandler (result) {
                 $("#app-status-ul").append('<li>token: '+ result +'</li>');
-                alert("regID = " + e.regid);
+                alert("regID = " + result);
 				
 			    $.ajax({
-			    	url: 'http://pjomyjobs.azurewebsites.net/regPushID.php?User=pauk&PushID='+e.regid,
+			    	url: 'http://pjomyjobs.azurewebsites.net/regPushID.php?User=pauk&PushID='+result,
 				   			       
 			    });
                 // Your iOS push server needs to know the token before it can push to this device
@@ -171,7 +171,7 @@ NOTE:
 		<div id="home">
 			<div id="app-status-div">
 				<ul id="app-status-ul">
-					<li>Cordova PushNotification Plugin Demo</li>
+					<li>Cordova PushNotification Plugin Demo 1</li>
 				</ul>
 			</div>
 		</div>
