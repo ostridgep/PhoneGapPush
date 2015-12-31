@@ -63,7 +63,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Third party plugins -->
-  <plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
+  <plugin name="phonegap-plugin-push" />
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />

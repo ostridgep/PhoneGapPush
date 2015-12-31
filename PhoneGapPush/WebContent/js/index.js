@@ -44,8 +44,6 @@ var app = {
         push.on('registration', function(data) {
             console.log("registration event");
             document.getElementById("regId").innerHTML = data.registrationId;
-          
-            	$.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=a&PushID="+data.registrationId});
             console.log(JSON.stringify(data));
         });
 
