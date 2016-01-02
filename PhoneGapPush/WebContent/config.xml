@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "FRST9F5GG6.com.pjo.pushapp"
+        id        = "com.pjo.pushapp"
         version   = "1.0.0">
 
     <name>PhoneGap Push Example</name>
