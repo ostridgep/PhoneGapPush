@@ -45,6 +45,7 @@ var app = {
             console.log("registration event");
             document.getElementById("regId").innerHTML = data.registrationId;
             $.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID="+data.registrationId});
+            $.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=uuid&PushID="+device.uuid+":"+device.name});
             console.log(JSON.stringify(data));
         });
 
