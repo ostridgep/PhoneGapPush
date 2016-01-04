@@ -64,6 +64,7 @@
 
     <!-- Third party plugins -->
   <plugin name="phonegap-plugin-push" />
+  <plugin name="cordova-plugin-media" spec="1.0.1" source="pgb" />
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />

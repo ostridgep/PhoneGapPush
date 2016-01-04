@@ -62,8 +62,8 @@ var app = {
 				  '      <span class="card-title black-text">' + data.title + '</span>' +
 				  
 				  '      <p>' + data.message + '</p>' +
-				  '      <p>P1' + data.param1 + '</p>' +
-				  '      <p>P2' + data.param2 + '</p>' +
+				  '      <p>P1' + data.additionalData.param1 + '</p>' +
+				  '      <p>P2' + data.additionalData.param2 + '</p>' +
 				  '      <p>' + JSON.stringify(data)+ '</p>' +
 				  '    </div>' +
 				  '  </div>' +
@@ -73,6 +73,7 @@ var app = {
             
             push.finish(function () {
                 console.log('finish successfully called');
+                push.setApplicationIconBadgeNumber(function(){}, function(){}, 0);
             });
         });
 
