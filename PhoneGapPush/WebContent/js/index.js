@@ -59,12 +59,12 @@ var app = {
 		  		  '<div class="col s12 m6">' +
 				  '  <div class="card darken-1">' +
 				  '    <div class="card-content black-text">' +
-				  '      <span class="card-title black-text">' + data.title + '</span>' +
+				  '      <span class="card-title black-text">' + data.additionalData.alertType + '</span>' +
 				  
 				  '      <p>' + data.message + '</p>' +
-				  '      <p>P1' + data.additionalData.param1 + '</p>' +
-				  '      <p>P2' + data.additionalData.param2 + '</p>' +
-				  '      <p>' + JSON.stringify(data)+ '</p>' +
+				  '      <p>P1' + data.additionalData.alertType + '</p>' +
+				  '      <p>P2' + data.additionalData.alertContent + '</p>' +
+				 
 				  '    </div>' +
 				  '  </div>' +
 				  ' </div>' +
