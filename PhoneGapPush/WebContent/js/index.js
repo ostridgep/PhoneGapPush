@@ -51,6 +51,7 @@ var app = {
 
         push.on('notification', function(data) {
         	console.log("notification event");
+        	navigator.notification.beep(4);
             console.log(JSON.stringify(data));
             var cards = document.getElementById("cards");
             var card = '<div class="row">' +
@@ -59,6 +60,8 @@ var app = {
 				  '    <div class="card-content black-text">' +
 				  '      <span class="card-title black-text">' + data.title + '</span>' +
 				  '      <p>' + data.message + '</p>' +
+				  '      <p>P1' + data.param1 + '</p>' +
+				  '      <p>P2' + data.param2 + '</p>' +
 				  '      <p>' + JSON.stringify(data)+ '</p>' +
 				  '    </div>' +
 				  '  </div>' +
