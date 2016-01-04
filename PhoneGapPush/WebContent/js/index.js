@@ -52,7 +52,7 @@ var app = {
         
         push.on('notification', function(data) {
         	console.log("notification event");
-        	navigator.notification.beep(4);
+        	//navigator.notification.beep(4);
             console.log(JSON.stringify(data));
             var cards = document.getElementById("cards");
             var card = '<div class="row">' +
