@@ -59,6 +59,7 @@ var app = {
 				  '    <div class="card-content black-text">' +
 				  '      <span class="card-title black-text">' + data.title + '</span>' +
 				  '      <p>' + data.message + '</p>' +
+				  '      <p>' + JSON.stringify(data)+ '</p>' +
 				  '    </div>' +
 				  '  </div>' +
 				  ' </div>' +
