@@ -59,6 +59,7 @@ var app = {
 				  '  <div class="card darken-1">' +
 				  '    <div class="card-content black-text">' +
 				  '      <span class="card-title black-text">' + data.title + '</span>' +
+				  
 				  '      <p>' + data.message + '</p>' +
 				  '      <p>P1' + data.param1 + '</p>' +
 				  '      <p>P2' + data.param2 + '</p>' +
