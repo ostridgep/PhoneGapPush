@@ -49,6 +49,7 @@ var app = {
             console.log(JSON.stringify(data));
         });
 
+        
         push.on('notification', function(data) {
         	console.log("notification event");
         	navigator.notification.beep(4);
