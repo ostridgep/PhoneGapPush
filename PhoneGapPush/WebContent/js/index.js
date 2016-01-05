@@ -40,6 +40,7 @@ var app = {
             "ios": {"alert": "true", "badge": "true", "sound": "true"}, 
             "windows": {} 
         });
+  
         
         push.on('registration', function(data) {
             console.log("registration event");
