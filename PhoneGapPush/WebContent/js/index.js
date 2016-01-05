@@ -56,8 +56,8 @@ var app = {
 
             
             
-            $.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul"+ new Date().today() + " @ " + new Date().timeNow()+"&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version});
-      alert("http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul"+ new Date().today() + " @ " + new Date().timeNow()+"&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version);
+            $.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version});
+      //alert("http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul"+ new Date().today() + " @ " + new Date().timeNow()+"&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version);
             console.log(JSON.stringify(data));
         });
 
