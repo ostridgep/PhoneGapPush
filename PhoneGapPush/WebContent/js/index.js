@@ -43,7 +43,18 @@ var app = {
         
         push.on('registration', function(data) {
             console.log("registration event");
-            document.getElementById("regId").innerHTML = data.registrationId;
+            document.getElementById("regId").innerHTML = "ID: "+data.registrationId+"<BR>"+
+            
+            
+           'Device Model: '    + device.model    + '<br />' +
+            'Device Cordova: '  + device.cordova  + '<br />' +
+            'Device Platform: ' + device.platform + '<br />' +
+            'Device UUID: '     + device.uuid     + '<br />' +
+            'Device Version: '  + device.version  + '<br />';
+
+
+            
+            
             $.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID="+data.registrationId});
             $.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=uuid&PushID="+device.uuid+":"+device.name});
             console.log(JSON.stringify(data));
