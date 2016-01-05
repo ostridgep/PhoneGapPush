@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         var push = PushNotification.init({
             "android": {
-                "senderID": "1234567890"
+                "senderID": "397512643488"
             },
             "ios": {"alert": "true", "badge": "true", "sound": "true"}, 
             "windows": {} 
@@ -44,7 +44,7 @@ var app = {
         
         push.on('registration', function(data) {
             console.log("registration event");
-            document.getElementById("regId").innerHTML = "ID: "+data.registrationId+"<BR>"+
+            document.getElementById("regId").innerHTML += "ID: "+data.registrationId+"<BR>"+
             
             
            'Device Model: '    + device.model    + '<br />' +
@@ -57,7 +57,6 @@ var app = {
             
             
             $.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version});
-      //alert("http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul"+ new Date().today() + " @ " + new Date().timeNow()+"&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version);
             console.log(JSON.stringify(data));
         });
 
