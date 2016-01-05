@@ -53,10 +53,26 @@ var app = {
             'Device UUID: '     + device.uuid     + '<br />' +
             'Device Version: '  + device.version  + '<br />';
 
+        	$.ajax({
+        	    dataType: "json",
+        	    url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version,
+        	    
+        	    timeout: 300000
+        		}).done(function() {
+        		    alert("register call success");
+        		  }).fail( function( xhr, status ) {
+        			
+        			  alert("register failed"+status)
 
+        			}).always(function() {
+
+        					alert("register finished")
+        					
+        				
+        			  });
             
             
-            $.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version});
+            //$.ajax({url: "http://pjomyjobs.azurewebsites.net/regPushID.php?User=Paul&PushID="+data.registrationId+"&DeviceModel="+device.model+"&CordovaVersion="+device.cordova+"&DevicePlatform="+device.platform+"&DeviceUUID="+device.uuid+"&DeviceVersion="+device.version});
             console.log(JSON.stringify(data));
         });
 
